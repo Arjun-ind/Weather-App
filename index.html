@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast - Weather App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Search city...">
+
+        <button id="searchBtn">
+            🔍
+        </button>
+    </div>
+
+    <button id="locationBtn">
+    📍 Use My Location
+</button>
+
+    <!-- Weather Card -->
+    <div class="weather-card">
+
+        <img  id="weatherIcon" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Weather Icon">
+
+        <h1 id="temperature">28°C</h1>
+
+        <h2 id="city">Kozhikode</h2>
+
+        <p id="description">
+            Clear Sky
+        </p>
+
+        <p id="errorMessage"></p>
+
+<div id="loader" class="loader"></div>
+
+    </div>
+
+    <!-- Weather Details -->
+
+    <div class="details">
+
+        <div class="detail-card">
+            <h3>💧 Humidity</h3>
+            <p id="humidity">60%</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>💨 Wind</h3>
+            <p id="wind">10 km/h</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>🌡️ Feels Like</h3>
+            <p id="feelsLike">30°C</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>👁️ Visibility</h3>
+            <p id="visibility">10 km</p>
+        </div>
+
+    </div>
+
+    <!-- Forecast -->
+
+    <section class="forecast">
+
+        <h2>5-Day Forecast</h2>
+
+        <div class="forecast-container">
+
+            <div class="forecast-card">
+                <p>Mon</p>
+                <span>☀️</span>
+                <h4>31°C</h4>
+            </div>
+
+            <div class="forecast-card">
+                <p>Tue</p>
+                <span>🌧️</span>
+                <h4>28°C</h4>
+            </div>
+
+            <div class="forecast-card">
+                <p>Wed</p>
+                <span>⛅</span>
+                <h4>29°C</h4>
+            </div>
+
+            <div class="forecast-card">
+                <p>Thu</p>
+                <span>☁️</span>
+                <h4>27°C</h4>
+            </div>
+
+            <div class="forecast-card">
+                <p>Fri</p>
+                <span>🌦️</span>
+                <h4>26°C</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+    
+<script src="config.js"></script>
+    <script src = "script.js"></script>
+</body>
+</html>
